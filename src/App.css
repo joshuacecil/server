@@ -1,0 +1,701 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+      display: grid;
+        grid-template-rows: .1fr;
+        background-color: black;
+        width: 17vw;
+        height: fit-content;
+        font-size: 15px;
+        color: white;
+        box-sizing: border-box;
+        position: fixed;
+            align-items: center;
+            left: 9rem;
+            
+
+}
+
+.side {
+  font-size: 20px;
+}
+
+.nav-con {
+  display: flex;
+    flex-direction: column;
+    gap: 0 0;
+    height: fit-content;
+}
+
+.logo {
+  fill: white;
+  width: 1.8em;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  padding: 15px 34px;
+  width: 90%;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 24px;
+  height: fit-content;
+  margin-left: 4px;
+  font-size: large;
+}
+
+.nav-item {
+  fill: white;
+  display: grid;
+  width: fit-content;
+  gap: 15px;
+  height: 37.3153px;
+  padding: 8px 11px 8px 16px;
+  grid-template-columns: 0fr 3fr;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-items: center;
+}
+
+.nav-item:hover {
+  background-color: rgba(62, 65, 68, 0.391);
+  border-radius: 45px;
+}
+
+.svg-container {
+  width: 1.75rem;
+}
+
+.profile {
+  margin-top: 12px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.dp {
+  margin-left: 10px;
+  width: 2.6rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.username {
+  font-size: 17px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.username p {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+  color: #71767B;
+}
+
+.username h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.dots {
+  fill: rgb(113, 118, 123);
+  width: 20px;
+  margin-top: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.active {
+  /* background-color: rgba(62, 65, 68, 0.391);  */
+  border-radius: 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.postgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 37rem;
+  box-sizing: border-box;
+  border: 0.1px rgb(113 118 123 / 40%);
+  padding: 0rem 1rem 1rem 1rem;
+  border-style: ridge;
+  border-collapse: collapse;
+}
+
+.profileimg {
+  margin-right: 0.3rem;
+  margin-top: 0.8rem;
+
+}
+
+.profileimg img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.rowone {
+  display: flex;
+  width: 31rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  grid-template-columns: 1.3fr 1fr 1fr;
+
+  font-size: 0.7rem;
+  align-items: center;
+}
+
+.userinfo {
+  display: flex;
+  margin-left: 0.6rem;
+}
+
+.littletext {
+  font-weight: 400;
+  color: rgb(113, 118, 123);
+  font-size: 15px;
+}
+.button{
+width: 17vw;
+}
+
+.button-dots {
+  fill: rgb(113, 118, 123);
+  background: transparent;
+  border: 0;
+  width: 2rem;
+}
+
+.content {
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: .6rem;
+}
+
+.postedimage {
+  width: 31rem;
+}
+
+.likescon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr .1fr;
+  margin: 1rem 0 1rem 0;
+  color: rgb(113, 118, 123);
+}
+
+.flex {
+  display: flex;
+  gap: .1rem;
+  position: relative;
+
+}
+
+.flex svg {
+  width: 1.2rem;
+  fill: rgb(113, 118, 123);
+  position: absolute;
+}
+
+.flex span {
+  position: absolute;
+  left: 1.4rem
+}
+
+.whitefonts {
+  color: rgb(231, 233, 234);
+  font-size: 15px;
+}
+
+.user h2,
+h4 {
+  margin-bottom: 0;
+  margin-top: 14px;
+}
+
+.blue:hover {
+  color: rgb(29, 155, 240);
+  fill: rgb(29, 155, 240)
+}
+
+.green:hover {
+  color: rgb(0, 186, 124);
+  fill: rgb(0, 186, 124)
+}
+
+.pink:hover {
+  color: rgb(249, 24, 128);
+  fill: rgb(249, 24, 128)
+}
+
+#left {
+  position: absolute;
+  left: -18px;
+}
+
+
+
+.blue:hover .circle {
+  background: rgb(29, 155, 240);
+
+}
+
+.green:hover .circle {
+  background: rgb(0, 186, 124);
+}
+
+.pink:hover .circle {
+  background: rgb(249, 24, 128);
+}
+
+
+
+.circle {
+  width: 1.9rem;
+  border-radius: 50%;
+  height: 1.9rem;
+  opacity: 0.3;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+}
+
+.btn1 {
+  background-color: #1D9BF0;
+  border-radius: 35px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  font-weight: 800;
+  border: 0;
+
+}
+
+.logo svg{
+  width: 1.8rem;
+}
+
+.sub {
+  font-family: "Roboto", serif;
+  border: 2px ridge rgb(113 118 123 / 40%);
+  border-radius: 1rem;
+  width: 320px;
+  background-color: black;
+  color: white;
+    padding: 0 15px 15px 15px;
+  font-size: 15px;
+    margin-bottom: 1rem;
+
+
+}
+
+pre {
+  font-family: inherit;
+}
+
+body {
+  color: white;
+  background-color: black;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imge {
+  width: 3rem;
+}
+
+.btn {
+  border: 0;
+  border-radius: 5rem;
+}
+
+.mrg {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.pnt p {
+  margin: 0;
+
+
+}
+
+.white {
+  background-color: #FFFFFF;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-weight: bold;
+  margin: 0;
+}
+
+.container {
+  border: 2px solid #333639;
+  border-radius: 1rem;
+  height: fit-content;
+  width: 29%;
+  padding: 1rem;
+
+}
+
+.mainGrid{
+      display: grid;
+      grid-template-columns: .9fr 1.5fr 1fr;
+        width: fit-content;
+      margin: 0 auto 0 55%;
+        gap: 1rem;
+}
+
+.Container {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  padding: 10px;
+
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  width: 700px;
+}
+
+.Container h6 {
+margin: 0;
+        color: rgb(113, 118, 123);
+
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.Container h4 {
+    margin: 0;
+        color: rgb(231, 233, 234);
+}
+
+.Container button {
+      background-color: transparent;
+        color: rgb(113, 118, 123);
+        border: 0;
+        font-size: 20px;
+}
+
+.Hastag {
+
+border: 2px ridge rgb(113 118 123 / 40%);
+ 
+  height: 485px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.Hastag h3 {
+  font: size 18px;
+  ;
+      color: rgb(231, 233, 234);
+}
+
+.Hastag h5 {
+color: rgb(29, 155, 240);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.Trendpix {
+    display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: .7rem;
+}
+
+.Trendpix img{
+      border-radius: 1rem;
+      height: 5rem;
+        width: 5rem;
+}
+
+.Tcontainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  margin-top: 1.4rem;
+}
+
+.Tcontainer h5 {
+  margin: 0;
+      color: rgb(113, 118, 123);
+  font-weight: 300;
+  font-size: 13px;
+ 
+}
+
+.Tcontainer h3 {
+  margin: 0;
+  font-size: 15px;
+      color: rgb(231, 233, 234);
+
+}
+
+.followcon {
+      display: grid;
+        grid-template-columns: 0.7fr 2.8fr 1fr;
+        width: 100%;
+        align-items: center;
+        background: black;
+        color: white;
+        padding: 1rem 0;
+        font-size: 15px;
+}
+
+.followconimg {
+    width: 2.5rem;
+  /* height: 5rem; */
+  border-radius: 50%;
+}
+
+
+h3 {
+  margin: 0
+}
+
+h6 {
+  margin: 0;
+}
+
+.text {
+  width: 100%;
+}
+
+.white {
+  background-color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-weight: bold;
+}
+
+.account {
+  background: black;
+    padding: 15px 15px;
+    width: 355px;
+    border: 2px ridge rgb(113 118 123 / 40%);
+    border-radius: 5%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.account h3 {
+    color: rgb(231, 233, 234);
+}
+
+/* .class tag #id */
+
+.text h3 {
+
+      color: rgb(231, 233, 234);
+      padding-bottom: .1rem;
+  
+}
+
+.text h6 {
+  font-size: 14px;
+  font-weight: 400;
+    color: rgb(113, 118, 123);
+
+}
+
+.account h4 {
+  color: rgb(29, 155, 240);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.columnThree
+{position: sticky;
+height: 1400px;
+top: 0;
+    margin-top: 3rem}
+
+.searchCon {
+  display: flex;
+  width: fit-content;
+  border-radius: 3rem;
+  font-size: 15px;
+  background: #202327;
+      margin-top: 5px;
+}
+
+.searchinput {
+  width: 280px;
+  height: 18px;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  color: rgb(113, 118, 123);
+  font-size: 15px;
+  outline: 0;
+}
+
+.searchSvg {
+  width: 1.1rem;
+  padding: 0 0 0 20px;
+  fill: rgb(113, 118, 123);
+}
+
+.toph:hover{
+  background: rgba(231, 233, 234, .1);
+}
+
+.toph{
+width: 295px;
+  text-align: center;
+  color: rgb(231, 233, 234);
+  text-align: center;
+
+}
+  .topbar{ display: flex;
+    width: fit-content;
+    /* filter: blur(8px); */
+    border: 1px ridge rgb(113 118 123 / 40%);}
+
+    .topwhole{
+      position: fixed;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 77rem;
+        z-index: 1;
+        background: black;
+        top: 0;
+      
+    }
+                
+        .con {
+        display: grid;
+          grid-template-columns: .5fr 4fr;
+          padding: 21px 15px 15px 15px;
+          background-color: black;
+          border: 1px solid #333639;
+              margin-top: 2.4rem;
+          gap: .5rem;
+          width: 37rem;
+          box-sizing: border-box;
+        }
+        
+    
+        .con img {
+          width: 3rem;
+          border-radius:50%;
+        }
+    
+        * {
+          font-family: "Roboto", sans-serif;
+        }
+    
+        .createprofileimg{
+          width: 3rem;
+          height: 1rem;
+        }
+        .post:focus {
+          outline: none;
+        }
+    
+    
+        .postinput {
+          background-color: transparent;
+          border: 0;
+          width: 100%;
+          color: white;
+          padding: 0rem 1rem 1rem 0rem;
+          box-sizing: border-box;
+          font-size: 1.4rem;
+        }
+    
+        .btns1 {
+          fill: rgb(29, 155, 240);
+          width: 20px;
+        }
+    
+        .btn2 {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+    
+    
+        }
+    
+        .btn {
+          border-radius: 1rem;
+          /* width: 3rem; */
+          padding: 0.4rem 1.3rem;
+          background-color: gray;
+          font-size: 1rem;
+          font-weight: bold;
+          border: 0;
+          color: black;
+          background-color: #FFFFFF;
+    
+        }
+    
+        .btncon{
+              display: flex;
+                justify-content: space-between;
+        }
+        .btncon button {
+          display: flex;
+          justify-content: center;
+        }
+    
+        .btn3 {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    
+        .btn3 button {
+          align-items: center;
+          background-color: transparent;
+          border: 0;
+    
+        }
+
+        .inputtext{
+            background: transparent;
+            border: 0px;
+            width: 484px;
+            resize: none;
+            height: 45px;
+            color: white;
+            font-size: 17px;
+          }
+                     .inputtext:focus{
+                      outline: none;
+                      border: none;
+                     }
+
